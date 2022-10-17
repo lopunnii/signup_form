@@ -3,6 +3,16 @@
     margin: 0;
 }
 
+button, input,
+select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    width: 200px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
 }
@@ -80,6 +90,43 @@ h1 {
     margin-bottom: 2rem;
 }
 
+.form-container {
+    padding: 3rem;
+}
+
+.form-container p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333333;
+
+    margin-bottom: 2rem;
+}
+
+label {
+    font-family:'Courier New', Courier, monospace;
+    color: #555555;
+    font-weight: 600;
+    font-size: 0.7rem;
+    width: 150px;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+
+    margin-bottom: 1rem;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
 .account {
     background-color: #eeeeee;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -91,6 +138,7 @@ h1 {
     width: 150px;
     color: white;
     font-weight: bold;
+    font-size: 0.9rem;
     background-color: #596d48;
     border-radius: 8px;
     border: none;
