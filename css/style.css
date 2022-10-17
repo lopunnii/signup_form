@@ -11,10 +11,12 @@ select, textarea {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    appearance: none;
 }
 
 body {
     display: flex;
+    background-color: #eeeeee;
 }
 
 #sidebar {
@@ -79,11 +81,13 @@ h1 {
 }
 
 .desc {
-    background-color: #eeeeee;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     padding: 3rem;
     font-size: 1.2rem;
+    max-width: 600px;
+
+    margin-top: 3rem;
 }
 
 .desc p:first-child {
@@ -92,6 +96,9 @@ h1 {
 
 .form-container {
     padding: 3rem;
+    background-color: white;
+
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .form-container p {
@@ -113,6 +120,18 @@ label {
 
 input {
     border: 1px solid #E5E7EB;
+    padding: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid cornflowerblue;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+}
+
+input:invalid {
+    border: 1px solid red;
 }
 
 .form-row {
@@ -128,7 +147,6 @@ input {
 }
 
 .account {
-    background-color: #eeeeee;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 3rem;
 }

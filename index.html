@@ -24,41 +24,42 @@
         </div>
         <div class="form-container">
             <p>Let's do this!</p>
-            <form action="" method="post">
+            <form action="" method="post" id="form">
                 <div class="form-row">
                     <div class="form-item">
                         <label for="first-name">FIRST NAME</label>
-                        <input id="first-name" name="first-name" type="text">
+                        <input id="first-name" name="first-name" type="text" placeholder="Thor">
                     </div>
                     <div class="form-item">
                         <label for="last-name">LAST NAME</label>
-                        <input id="last-name" name="last-name" type="text">
+                        <input id="last-name" name="last-name" type="text" placeholder="Odinson">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-item">
                     <label for="email">EMAIL</label>
-                    <input id="email" name="email" type="email">
+                    <input id="email" name="email" type="email" placeholder="thor@odin.com">
                     </div>
                     <div class="form-item">
                     <label for="tel">PHONE NUMBER</label>
-                    <input id="tel" name="tel" type="tel">
+                    <input id="tel" name="tel" type="tel" placeholder="123456789" pattern="^\d+$"
+                    title="Please input numbers only.">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-item">
                     <label for="password">PASSWORD</label>
-                    <input id="password" name="password" type="password">
+                    <input id="password" name="password" type="password" minlength="8" class="error" required>
                     </div>
                     <div class="form-item">
                     <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                    <input id="confirm-pwd" name="confirm-password" type="password">
+                    <input id="confirm-pwd" name="confirm-password" type="password" minlength="8" class="error" required>
                     </div>
                 </div>
             </form>
         </div>
         <div class="account">
-            <button>Create Account</button>
+            <button type="submit" form="form">Create Account</button>
             <p>Already have an account? <a href="#">Log in</a></p>
         </div>
     </section>
