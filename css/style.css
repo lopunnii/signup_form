@@ -10,6 +10,7 @@ body {
 #sidebar {
     height: 100vh;
     width: 50%;
+    flex: 1;
 }
 
 .sidebar-img {
@@ -17,4 +18,57 @@ body {
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sidebar-logo {
+    width: 64px;
+}
+
+h1 {
+    font-family: norse-bold;
+    color: white;
+    font-size: 76px;
+}
+
+.header-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    padding: 15px;
+}
+
+#sidebar p {
+    color: white;
+    text-align: center;
+}
+
+#sidebar p a:link {
+    color: white;
+}
+
+#sidebar p a:visited {
+    color: white;
+}
+
+#sidebar p a:hover {
+    color: lightgrey;
+}
+
+#sidebar p a:active {
+    color: lightgrey;
+}
+
+#main_section {
+    flex: 2;
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(../fonts/Norse-Bold.otf)
 }
