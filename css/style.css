@@ -68,6 +68,65 @@ h1 {
     flex: 2;
 }
 
+.desc {
+    background-color: #eeeeee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 3rem;
+    font-size: 1.2rem;
+}
+
+.desc p:first-child {
+    margin-bottom: 2rem;
+}
+
+.account {
+    background-color: #eeeeee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 3rem;
+}
+
+.account button {
+    padding: 10px;
+    width: 150px;
+    color: white;
+    font-weight: bold;
+    background-color: #596d48;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+    margin-bottom: 2rem;
+}
+
+.account button:hover {
+    background-color: #475739;
+    cursor: pointer;
+}
+
+.account p {
+    font-size: 0.9rem;
+}
+
+.account a:link {
+    text-decoration: none;
+    color: #596d48;
+    font-weight: bold;
+}
+
+.account a:visited {
+    color: #596d48;
+}
+
+.account a:hover {
+    color: #596d48;
+    text-decoration: underline;
+}
+
+.account a:active {
+    color: #475739;
+}
+
 @font-face {
     font-family: norse-bold;
     src: url(../fonts/Norse-Bold.otf)
