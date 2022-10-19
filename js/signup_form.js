@@ -1,3 +1,11 @@
+function trigger() {
+let pwInput = document.getElementById("pw2")
+pwInput.addEventListener("keyup", () => {
+    matchPassword();
+});
+}
+trigger();
+
 function matchPassword() {
     let pw1 = document.getElementById("pw1").value;
     let pw2 = document.getElementById("pw2").value;
