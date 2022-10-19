@@ -58,6 +58,9 @@ h1 {
 #sidebar p {
     color: white;
     text-align: center;
+
+    position: relative;
+    top: 9rem;
 }
 
 #sidebar p a:link {
