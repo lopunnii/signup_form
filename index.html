@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/signup_form.js"></script>
+    <script src="js/signup_form.js" defer></script>
     <title>Sign-Up Form</title>
 </head>
 <body>
@@ -56,8 +56,8 @@
                     <div class="form-item">
                     <label for="pw2">CONFIRM PASSWORD</label>
                     <input id="pw2" name="confirm-password" type="password" minlength="8" class="error" required
-                    title="Please input at least 8 characters.">
-                    <span id="wrong_pw_alert"></span>
+                    title="Please input at least 8 characters." onkeyup="matchPassword()">
+                    <span id="pw_alert"></span>
                     </div>
                 </div>
             </form>
